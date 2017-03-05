@@ -1,33 +1,33 @@
-{% set version = "1.1.1" %}
+{% set version = "1.1.2" %}
 
 package:
-    name: gpxpy
-    version: {{ version }}
+  name: gpxpy
+  version: {{ version }}
 
 source:
-    fn: gpxpy-{{ version }}.tar.gz
-    url: https://pypi.python.org/packages/source/g/gpxpy/gpxpy-{{ version }}.tar.gz
-    md5: 55b62ccd2acc7cc441efb82230b10b48
+  fn: gpxpy-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/g/gpxpy/gpxpy-{{ version }}.tar.gz
+  sha256: c46b8fe738c6402638d2b5434020bc6ccd24b15090d7234fe9b158fdea14f354
 
 build:
     number: 0
     script: python setup.py install
 
 requirements:
-    build:
-        - python
-    run:
-        - python
+  build:
+    - python
+  run:
+    - python
 
 test:
-    imports:
-        - gpxpy
+  imports:
+    - gpxpy
 
 about:
-    home: http://www.trackprofiler.com/gpxpy/index.html
-    license: Apache-2.0
-    summary: GPX file parser and GPS track manipulation library
+  home: http://www.trackprofiler.com/gpxpy/index.html
+  license: Apache-2.0
+  summary: 'GPX file parser and GPS track manipulation library.'
 
 extra:
-    recipe-maintainers:
-        - ocefpaf
+  recipe-maintainers:
+    - ocefpaf
