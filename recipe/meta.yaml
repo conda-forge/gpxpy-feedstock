@@ -1,21 +1,22 @@
-{% set version = "1.1.2" %}
+{% set version = "1.2.0" %}
 
 package:
   name: gpxpy
   version: {{ version }}
 
 source:
-  fn: gpxpy-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/g/gpxpy/gpxpy-{{ version }}.tar.gz
-  sha256: c46b8fe738c6402638d2b5434020bc6ccd24b15090d7234fe9b158fdea14f354
+  sha256: 87cf1cd20210f2fe49ea25c0b95f40d76730cb40669242cae2831fe2ba94b6eb
 
 build:
+    noarch: python
     number: 0
-    script: python setup.py install
+    script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
   build:
     - python
+    - pip
   run:
     - python
 
