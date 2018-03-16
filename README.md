@@ -14,9 +14,7 @@ Summary: GPX file parser and GPS track manipulation library.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/gpxpy-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/gpxpy-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/gpxpy-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/gpxpy-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/gpxpy-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/gpxpy-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/gpxpy-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/gpxpy-feedstock)
 
 Current release info
 ====================
