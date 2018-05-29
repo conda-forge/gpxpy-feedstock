@@ -14,12 +14,15 @@ Summary: GPX file parser and GPS track manipulation library.
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/gpxpy-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/gpxpy-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/gpxpy-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/gpxpy-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/gpxpy/badges/version.svg)](https://anaconda.org/conda-forge/gpxpy)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/gpxpy/badges/downloads.svg)](https://anaconda.org/conda-forge/gpxpy)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-gpxpy-green.svg)](https://anaconda.org/conda-forge/gpxpy) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/gpxpy.svg)](https://anaconda.org/conda-forge/gpxpy) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/gpxpy.svg)](https://anaconda.org/conda-forge/gpxpy) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/gpxpy.svg)](https://anaconda.org/conda-forge/gpxpy) |
 
 Installing gpxpy
 ================
