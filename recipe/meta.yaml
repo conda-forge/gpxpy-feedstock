@@ -9,9 +9,9 @@ source:
   sha256: b09e3212c9af83188d308214428c20c57b4ec1d45c3a3fc40f4b3d49c758aebf
 
 build:
-    noarch: python
-    number: 0
-    script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  number: 0
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   build:
@@ -27,7 +27,8 @@ test:
 about:
   home: http://www.trackprofiler.com/gpxpy/index.html
   license: Apache-2.0
-  summary: 'GPX file parser and GPS track manipulation library.'
+  license_file: LICENSE.txt
+  summary: 'GPX file parser and GPS track manipulation library'
 
 extra:
   recipe-maintainers:
