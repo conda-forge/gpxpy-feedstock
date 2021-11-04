@@ -1,4 +1,4 @@
-{% set version = "1.4.2" %}
+{% set version = "1.5.0" %}
 
 package:
   name: gpxpy
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/g/gpxpy/gpxpy-{{ version }}.tar.gz
-  sha256: 0832041899cdfdc5a607291bbef3d73042e16ffcecc3f2cb9631b699db0bb53f
+  sha256: e6993a8945eae07a833cd304b88bbc6c3c132d63b2bf4a9b0a5d9097616b8708
 
 build:
   number: 0
@@ -14,7 +14,7 @@ build:
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
-  build:
+  host:
     - python >=3.6
     - pip
   run:
