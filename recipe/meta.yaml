@@ -1,17 +1,18 @@
+{% set name = "gpxpy" %}
 {% set version = "1.6.1" %}
 
 package:
-  name: gpxpy
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/g/gpxpy/gpxpy-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gpxpy-{{ version }}.tar.gz
   sha256: 473ff2fa17af6913a9879599cb6fe9c7a30fa1698898feff21a825447ee52fba
 
 build:
-  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  number: 1
 
 requirements:
   host:
@@ -29,10 +30,12 @@ test:
     - pip
 
 about:
-  home: http://www.trackprofiler.com/gpxpy/index.html
-  license: Apache-2.0
-  license_file: LICENSE.txt
+  home: https://github.com/tkrajina/gpxpy
   summary: GPX file parser and GPS track manipulation library
+  license: Apache-2.0
+  license_file:
+    - LICENSE.txt
+    - NOTICE.txt
 
 extra:
   recipe-maintainers:
