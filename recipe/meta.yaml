@@ -1,5 +1,5 @@
 {% set name = "gpxpy" %}
-{% set version = "1.6.1" %}
+{% set version = "1.6.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gpxpy-{{ version }}.tar.gz
-  sha256: 473ff2fa17af6913a9879599cb6fe9c7a30fa1698898feff21a825447ee52fba
+  sha256: a72c484b97ec42b80834353b029cc8ee1b79f0ffca1179b2210bb3baf26c01ae
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
